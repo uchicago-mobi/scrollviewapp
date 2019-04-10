@@ -14,15 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    @IBAction func didThing(_ sender: Any) {
+    
+    @IBAction func didSaveDragons(_ sender: Any) {
         let alertController = UIAlertController(title: "Huzzah", message:
             "You have saved them!", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Most Excellent", style: .default))
         
         self.present(alertController, animated: true, completion: nil)
-
     }
-    
 }
 

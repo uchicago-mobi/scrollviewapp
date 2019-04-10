@@ -46,7 +46,7 @@
                                     <color key="titleColor" red="0.14408454300000001" green="0.6933273673" blue="0.9637371898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didThing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7OV-qh-qio"/>
+                                    <action selector="didSaveDragons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yti-wu-I0Z"/>
                                 </connections>
                             </button>
                         </subviews>
