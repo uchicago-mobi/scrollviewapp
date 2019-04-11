@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        scrollView.delegate = self
     }
     
+    //    MARK: Button Actions
     @IBAction func didSaveDragons(_ sender: Any) {
         let alertController = UIAlertController(
             title: "Huzzah",
@@ -28,4 +31,12 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 }
+
+extension ViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("SCROLLING")
+    }
+}
+
+
 
