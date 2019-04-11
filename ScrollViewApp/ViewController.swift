@@ -34,7 +34,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("SCROLLING")
+        print("(\(scrollView.contentOffset.x),\(scrollView.contentOffset.y))")
     }
 }
 
