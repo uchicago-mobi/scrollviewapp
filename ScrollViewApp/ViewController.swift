@@ -16,10 +16,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didSaveDragons(_ sender: Any) {
-        let alertController = UIAlertController(title: "Huzzah", message:
-            "You have saved them!", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Most Excellent", style: .default))
-        
+        let alertController = UIAlertController(
+            title: "Huzzah",
+            message: "You have saved them!",
+            preferredStyle: .alert
+        )
+        alertController.addAction(UIAlertAction(
+            title: "Most Excellent",
+            style: .default
+        ))
         self.present(alertController, animated: true, completion: nil)
     }
 }
